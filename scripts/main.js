@@ -22,6 +22,7 @@ _.extend(this, options);
   // //   return Math.random() * 50;
 };
 
+
 var Villain = function(quote){
   var options = options || {};
   _.defaults(options, {
@@ -33,6 +34,7 @@ var Villain = function(quote){
 var jonnyCash = new Hero ({
   quote:"You win— 100,000 school children just received a free instrument of their choice",
   img: "Pictures/johnny-cash1.jpg"
+
 });
 
  var kurtCobain = new Hero ({
