@@ -26,6 +26,7 @@ $('.button').on('click', attackPressed);
 
 
 
+
 ///hero prototypes and uneque atrobutes///
 var jonnyCash = new Hero ({
   quote:"You win— 100,000 school children just received a free instrument of their choice",
