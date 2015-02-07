@@ -17,6 +17,14 @@ console.log(attack(10));
 
 
 
+function attackPressed(event) {
+  event.preventDefault();
+  operation = 'button';
+  console.log('yes');
+}
+
+document.getElementById('button').addEventListener('click', plusPressed);
+
 
 
 
