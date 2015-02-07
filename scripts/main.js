@@ -3,7 +3,7 @@
 var Hero = function(quote){
   var options = options || {};
   _.defaults(options, {
-    health: 100,
+    health: 100
 
 });
 
@@ -18,7 +18,7 @@ _.extend(this, options);
   // this.health = 100;
   // // this.prototype.attack= function(number){
   // //   return Math.random() * 50;
-});
+};
 
 
 
@@ -26,6 +26,7 @@ _.extend(this, options);
 var jonnyCash = new Hero ({
   quote:"You win— 100,000 school children just received a free instrument of their choice",
   img: "Pictures/johnny-cash1.jpg"
+
 });
 
  var kurtCobain = new Hero ({
