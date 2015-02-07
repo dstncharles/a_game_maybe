@@ -38,7 +38,11 @@ var Villain = function(quote){
 });
 _.extend(this, options);
 };
+<<<<<<< HEAD
 
+=======
+test test testy
+>>>>>>> Dustin
 var britneySpears = new Villain ({
   quote:"You lost— from now on all singers will be picked by their looks and their voices will be digitally rendered.",
   img: "Pictures/01_britney_justin.jpg"
