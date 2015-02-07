@@ -23,7 +23,7 @@ console.log(attack(10));
   console.log('yes');
 };
 
-document.getElementById('button').addEventListener('click', attackPressed);
+$('.button').on('click', attackPressed);
 
 
 
