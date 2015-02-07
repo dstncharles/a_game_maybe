@@ -17,13 +17,13 @@ console.log(attack(10));
 
 
 
-function attackPressed(event) {
+ var attackPressed = function(event) {
   event.preventDefault();
   operation = 'button';
   console.log('yes');
-}
+};
 
-document.getElementById('button').addEventListener('click', plusPressed);
+document.getElementById('button').addEventListener('click', attackPressed);
 
 
 
