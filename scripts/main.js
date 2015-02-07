@@ -9,7 +9,7 @@ var Hero = function(quote){
 
 
 
-_.extend(this, options);
+_.extend(xxx, options);
 
 
   // //       hungry: true,
