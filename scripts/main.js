@@ -4,7 +4,14 @@ var Hero = function(quote){
   var options = options || {};
   _.defaults(options, {
     health: 100,
+    evil: false
+});
 
+var Villain = function(quote){
+  var options = options || {};
+  _.defaults(options, {
+    health: 100,
+    evil: true
 });
 
 _.extend(this, options);
@@ -18,7 +25,7 @@ _.extend(this, options);
   // this.health = 100;
   // // this.prototype.attack= function(number){
   // //   return Math.random() * 50;
-});
+};
 
 
 
@@ -38,17 +45,17 @@ var andre3000 = new Hero ({
     img: "Pictures/andre-3000-628.jpg"
     });
 
-var britneySpears = new Hero ({
+var britneySpears = new Villain ({
   quote:"You lost— from now on all singers will be picked by their looks and their voices will be digitally rendered.",
   img: "Pictures/01_britney_justin.jpg"
   });
 
-var Pink = new Hero ({
+var Pink = new Villain ({
   quote:'You lost— All song lyrics will now be composed only of cliche’s strung together',
   img: "Pictures/Pink_Mazur_81279151.jpg"
   });
 
-var AdamLevine = new Hero ({
+var AdamLevine = new Villain ({
   quote:'You lost— Legions of jackbooted boy band members are storming all independent record labels and taking them somewhere never to be seen, or heard from again. ',
   img: "Pictures/adam-levine-768.jpg"
   });
