@@ -7,12 +7,7 @@ var Hero = function(quote){
     evil: false
 });
 
-var Villain = function(quote){
-  var options = options || {};
-  _.defaults(options, {
-    health: 100,
-    evil: true
-});
+
 
 _.extend(this, options);
 
@@ -27,8 +22,13 @@ _.extend(this, options);
   // //   return Math.random() * 50;
 };
 
-
-
+var Villain = function(quote){
+  var options = options || {};
+  _.defaults(options, {
+    health: 100,
+    evil: true
+});
+};
 
 var jonnyCash = new Hero ({
   quote:"You win— 100,000 school children just received a free instrument of their choice",
