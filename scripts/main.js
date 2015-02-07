@@ -1,5 +1,5 @@
-//make character that can take a chariteristic
 
+///hero default atrobutes///
 var Hero = function(options){
   options = options || {};
   _.defaults(options, {
@@ -9,25 +9,24 @@ var Hero = function(options){
 _.extend(this, options);
 };
 
+
+
+///on click log randome attack number////
 var attack = function(number){
   return Math.random() * 50;
 };
-console.log(attack(10));
-
-
-
 
  var attackPressed = function(event) {
   event.preventDefault();
   operation = 'button';
-  console.log('yes');
+  console.log(attack(10));
 };
 
 $('.button').on('click', attackPressed);
 
 
 
-
+///hero prototypes and uneque atrobutes///
 var jonnyCash = new Hero ({
   quote:"You win— 100,000 school children just received a free instrument of their choice",
   img: "Pictures/johnny-cash1.jpg"
@@ -50,7 +49,7 @@ var andre3000 = new Hero ({
 
 
 
-
+///villain default atrobutes///
 var Villain = function(options){
   options = options || {};
   _.defaults(options, {
@@ -60,6 +59,7 @@ var Villain = function(options){
 _.extend(this, options);
 };
 
+///villan prototypes and uneque atrobutes///
 var britneySpears = new Villain ({
   quote:"You lost— from now on all singers will be picked by their looks and their voices will be digitally rendered.",
   img: "Pictures/01_britney_justin.jpg"
