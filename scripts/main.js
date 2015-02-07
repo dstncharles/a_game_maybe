@@ -1,13 +1,24 @@
 //make character that can take a chariteristic
 
-var Hero = function(quote){
-  var options = options || {};
+var Hero = function(options){
+  options = options || {};
   _.defaults(options, {
     health: 100,
     evil: false
 });
 _.extend(this, options);
 };
+
+var attack = function(number){
+  return Math.random() * 50;
+};
+console.log(attack(10));
+
+
+
+
+
+
 
 var jonnyCash = new Hero ({
   quote:"You win— 100,000 school children just received a free instrument of their choice",
@@ -30,8 +41,10 @@ var andre3000 = new Hero ({
 
 
 
-var Villain = function(quote){
-  var options = options || {};
+
+
+var Villain = function(options){
+  options = options || {};
   _.defaults(options, {
     health: 100,
     evil: true
@@ -53,8 +66,6 @@ var AdamLevine = new Villain ({
   quote:'You lost— Legions of jackbooted boy band members are storming all independent record labels and taking them somewhere never to be seen, or heard from again. ',
   img: "Pictures/adam-levine-768.jpg"
   });
-
-
 
 
 
