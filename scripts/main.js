@@ -6,29 +6,7 @@ var Hero = function(quote){
     health: 100,
     evil: false
 });
-
-
-
-_.extend(xxx, options);
-
-
-  // //       hungry: true,
-  // //       color: 'black',
-  // //       owner: undefined
-  // //     });
-  // this.quote = quote;
-  // this.health = 100;
-  // // this.prototype.attack= function(number){
-  // //   return Math.random() * 50;
-};
-
-
-var Villain = function(quote){
-  var options = options || {};
-  _.defaults(options, {
-    health: 100,
-    evil: true
-});
+_.extend(this, options);
 };
 
 var jonnyCash = new Hero ({
@@ -47,6 +25,20 @@ var andre3000 = new Hero ({
     img: "Pictures/andre-3000-628.jpg"
     });
 
+
+
+
+
+
+var Villain = function(quote){
+  var options = options || {};
+  _.defaults(options, {
+    health: 100,
+    evil: true
+});
+_.extend(this, options);
+};
+test test testy
 var britneySpears = new Villain ({
   quote:"You lost— from now on all singers will be picked by their looks and their voices will be digitally rendered.",
   img: "Pictures/01_britney_justin.jpg"
@@ -63,7 +55,17 @@ var AdamLevine = new Villain ({
   });
 
 
+
+
+
+  // // this.prototype.attack= function(number){
+  // //   return Math.random() * 50;
 //
+
+
+
+
+
 // // var Dog = function (options) {
 // //   var options = options || {};
 // //   _.defaults(options, {
