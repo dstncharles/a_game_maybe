@@ -8,38 +8,40 @@ var Hero = function(options) {
   });
   _.extend(this, options);
 };
-
-Hero.prototype.injury = function(target){
-  return target.health = 10;
+Hero.prototype.guitarSmash = function(villain) {
+  if(Math.random() * 25) {
+    hitAmount =(Math.random() * 25);
+    villain.health = villain.health - hitAmount;
+    villain.damage = hitAmount;
+    console.log("Hit!" + hitAmount);
+  } else {
+    console.log("Missed!");
+    villain.damage =0;
+  }
 };
-
-
-///on click log randome attack number////
-var attack = function(number) {
-  return Math.random() * 50;
-};
-
 var attackPressed = function(event) {
   event.preventDefault();
   operation = 'button';
-  console.log(attack(10));
+  console.log(Hero.prototype.guitarSmash(1));
 };
 
 $('.button').on('click', attackPressed);
 
-
 ///hero prototypes and uneque atrobutes///
 var jonnyCash = new Hero({
+  name: "Jonny Cash",
   quote: "You win— 100,000 school children just received a free instrument of their choice",
   img: "Pictures/johnny-cash1.jpg"
 });
 
 var kurtCobain = new Hero({
+  name: "Kurt Cobain",
   quote: "You win— 100 different groups of friends just started garage bands",
   img: "Pictures/Kurt_Cobain_.jpg"
 });
 
 var andre3000 = new Hero({
+  name: "Andre 3000",
   quote: "You win— somthing, somthing, somthing YEAH!!",
   img: "Pictures/andre-3000-628.jpg"
 });
@@ -63,54 +65,19 @@ var Villain = function(options) {
 
 ///villan prototypes and uneque atrobutes///
 var britneySpears = new Villain({
+  name: "Britney Spears",
   quote: "You lost— from now on all singers will be picked by their looks and their voices will be digitally rendered.",
   img: "Pictures/01_britney_justin.jpg"
 });
 
 var Pink = new Villain({
+  name: "Pink",
   quote: 'You lost— All song lyrics will now be composed only of cliche’s strung together',
   img: "Pictures/Pink_Mazur_81279151.jpg"
 });
 
 var AdamLevine = new Villain({
+  name: "Adam Levine",
   quote: 'You lost— Legions of jackbooted boy band members are storming all independent record labels and taking them somewhere never to be seen, or heard from again. ',
   img: "Pictures/adam-levine-768.jpg"
 });
-
-
-  // // this.prototype.attack= function(number){
-  // //   return Math.random() * 50;
-//
-
-
-
-
-
-// // var Dog = function (options) {
-// //   var options = options || {};
-// //   _.defaults(options, {
-// //       hungry: true,
-// //       color: 'black',
-// //       owner: undefined
-// //     });
-// //   _.extend(this, options);
-// // };
-// //
-// // Dog.prototype += {
-// //   status: 'normal',
-// //   color: 'black',
-// //   hungry: true
-// // };
-// //
-// // var Human = function(options) {
-// //   var options = options || {};
-// //   _.defaults(options, {
-// //       cool: false,
-// //       pet: function(target) { target.status='happy'; }
-// //     });
-// //   _.extend(this, options);
-// // };
-// //
-// Human.prototype.feed = function(target) {
-//   target.hungry = false;
-// };
