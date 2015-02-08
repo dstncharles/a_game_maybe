@@ -9,3 +9,63 @@ body {
 h1 {
   text-align: center;
  }
+
+.sorter {
+  width: 100%;
+}
+.heroPic ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.villainPic ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.heroPic {
+  float: left;
+  width: 200px;
+}
+
+.heroPic img {
+  margin: auto;
+}
+
+.middle {
+  float: left;
+  width: 400px;
+  height: 100px;
+  padding-top: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.villainPic {
+  float: left;
+  width: 200px;
+}
+
+.button-div {
+  width: 100%;
+  clear: both;
+}
+
+.button {
+  margin: 0 auto;
+  background-color: #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius:6px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border:none;
+  text-align: center;
+}

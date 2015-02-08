@@ -1,3 +1,5 @@
+var johnnyCash;
+
 ///hero default attributes///
 var Hero = function(options) {
   options = options || {};
@@ -9,6 +11,9 @@ var Hero = function(options) {
   _.extend(this, options);
 };
 
+// Hero.prototype.injury = function(target){
+//   return target.health = 10;
+// };
 
 
 ///on click log random attack number////
@@ -27,26 +32,36 @@ $('.button').on('click', attackPressed);
 
 
 
+
 ///hero prototypes and unique attributes///
 var jonnyCash = new Hero({
   quote: "You win— 100,000 school children just received a free instrument of their choice",
   img: "Pictures/johnny-cash1.jpg"
-
 });
 
 var kurtCobain = new Hero({
   quote: "You win— 100 different groups of friends just started garage bands",
-  img: "Pictures/Kurt_Cobain_.jpg"
+  img: 'Pictures/Kurt_Cobain_.jpg'
 });
 
 var andre3000 = new Hero({
   quote: "You win— somthing, somthing, somthing YEAH!!",
-  img: "Pictures/andre-3000-628.jpg"
+  img: '/Users/tlphillipsjr/documents/a_game_maybe/Pictures/andre-3000-628.jpg'
 });
 
 
+function heroPic(sort){
 
+ if ($('selected') == sort.andre3000) {
+return  $("#heropic").append("andre3000.img");
 
+} else if ($('selected') == sort.johnnyCash) {
+  return  $("#heropic").append("Pictures/johnny-cash1.jpg");
+
+} else  {
+  return  $("#heropic").append("Pictures/Kurt_Cobain_.jpg");
+}
+}
 
 
 
@@ -111,6 +126,6 @@ var AdamLevine = new Villain({
 // //   _.extend(this, options);
 // // };
 // //
-// // Human.prototype.feed = function(target) {
-// //   target.hungry = false;
-// // };
+// Human.prototype.feed = function(target) {
+//   target.hungry = false;
+// };

@@ -12,19 +12,47 @@
 <body>
   <h1>Welcome to The Day The Music Died!</h1>
 
-  <h2>Choose a player</h2>
+  <!-- <h2>Choose a player</h2> -->
 
-  <select name="sort" id="">
+<div class="sorter">
+  <select name="sort" id="choose">
+    <option value="#">Choose Hero</option>
     <option value="jonnyCash">Jonny Cash</option>
     <option value="kurtCobain">Kurt Cobain</option>
     <option value="andre3000">Andre 3000</option>
   </select>
+</div>
 
-  <button class="button">Click me dickhead</button>
 
-  <audio autoplay>
-    <source src="music/bonobocirrus.mp3" />
-  </audio>
+<div class="heroPic">
+  <ul>
+    <li>
+      <img src="Pictures/johnny-cash1.jpg"></li>
+    <li><img src="Pictures/Kurt_Cobain_.jpg"></li>
+    <li><img src="Pictures/andre-3000-628.jpg"></li>
+  </ul>
+</div>
+
+<div class="middle">
+  <h2>Fight!</h2>
+</div>
+
+<div class="villainPic">
+  <ul>
+    <li><img src="Pictures/01_britney_justin.jpg"></li>
+    <li><img src="Pictures/Pink_Mazur_81279151.jpg"></li>
+    <li><img src="Pictures/adam-levine-768.jpg"></li>
+  </ul>
+</div>
+
+<div class="button-div">
+  <button class="button">Attack!</button>
+</div>
+
+
+<!--   <audio autoplay>
+  <source src="music/bonobocirrus.mp3" />
+</audio> -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/underscore/underscore.js"></script>
   <script src="scripts/main.js"></script>
