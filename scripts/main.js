@@ -9,6 +9,9 @@ var Hero = function(options) {
   _.extend(this, options);
 };
 
+Hero.prototype.injury = function(target){
+  target.damage = 10;
+};
 
 
 ///on click log randome attack number////
@@ -23,7 +26,6 @@ var attackPressed = function(event) {
 };
 
 $('.button').on('click', attackPressed);
-
 
 
 ///hero prototypes and uneque atrobutes///
@@ -110,6 +112,6 @@ var AdamLevine = new Villain({
 // //   _.extend(this, options);
 // // };
 // //
-// // Human.prototype.feed = function(target) {
-// //   target.hungry = false;
-// // };
+// Human.prototype.feed = function(target) {
+//   target.hungry = false;
+// };
