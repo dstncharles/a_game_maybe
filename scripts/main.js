@@ -10,7 +10,7 @@ var Hero = function(options) {
 };
 
 Hero.prototype.injury = function(target){
-  target.damage = 10;
+  return target.health = 10;
 };
 
 
@@ -32,7 +32,6 @@ $('.button').on('click', attackPressed);
 var jonnyCash = new Hero({
   quote: "You win— 100,000 school children just received a free instrument of their choice",
   img: "Pictures/johnny-cash1.jpg"
-
 });
 
 var kurtCobain = new Hero({
