@@ -1,4 +1,5 @@
-///hero default atrobutes///
+// Domain/Data
+///hero default attributes///
 var Hero = function(options) {
   options = options || {};
   _.defaults(options, {
@@ -19,15 +20,8 @@ Hero.prototype.guitarSmash = function(villain) {
     villain.damage =0;
   }
 };
-var attackPressed = function(event) {
-  event.preventDefault();
-  operation = 'button';
-  console.log(Hero.prototype.guitarSmash(1));
-};
 
-$('.button').on('click', attackPressed);
-
-///hero prototypes and uneque atrobutes///
+///hero prototypes and unique attributes///
 var jonnyCash = new Hero({
   name: "Jonny Cash",
   quote: "You win— 100,000 school children just received a free instrument of their choice",
@@ -46,13 +40,7 @@ var andre3000 = new Hero({
   img: "Pictures/andre-3000-628.jpg"
 });
 
-
-
-
-
-
-
-///villain default atrobutes///
+///villain default attributes///
 var Villain = function(options) {
   options = options || {};
   _.defaults(options, {
@@ -63,7 +51,7 @@ var Villain = function(options) {
   _.extend(this, options);
 };
 
-///villan prototypes and uneque atrobutes///
+///villain prototypes and unique attributes///
 var britneySpears = new Villain({
   name: "Britney Spears",
   quote: "You lost— from now on all singers will be picked by their looks and their voices will be digitally rendered.",
@@ -81,3 +69,16 @@ var AdamLevine = new Villain({
   quote: 'You lost— Legions of jackbooted boy band members are storming all independent record labels and taking them somewhere never to be seen, or heard from again. ',
   img: "Pictures/adam-levine-768.jpg"
 });
+
+//Application state
+var attackPressed = function(event) {
+  event.preventDefault();
+  operation = 'button';
+  console.log(Hero.jonnyCash.guitarSmash(britneySpears));
+};
+
+// user interaction presentation and iteration
+// play button on click
+// play again onclick
+// character slect in drop down
+$('.button').on('click', attackPressed);
